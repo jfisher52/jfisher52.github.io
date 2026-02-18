@@ -1,0 +1,122 @@
+# Conference Published
+@inproceedings{ipa,
+    title = {Inference-Time Policy Adapters ({IPA}): Tailoring Extreme-Scale {LM}s without Fine-tuning},
+    author = {Lu, Ximing  and Brahman, Faeze  and West, Peter  and Jung, Jaehun  and Chandu, Khyathi  and Ravichander, Abhilasha  and Ammanabrolu, Prithviraj  and Jiang, Liwei  and Ramnath, Sahana  and Dziri, Nouha  and Fisher, Jillian  and Lin, Bill  and Hallinan, Skyler  and Qin, Lianhui  and Ren, Xiang  and Welleck, Sean  and Choi, Yejin},
+    editor = {Bouamor, Houda  and Pino, Juan  and Bali, Kalika},
+    booktitle = "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics (EMNLP)",
+    Note = "https://aclanthology.org/2023.emnlp-main.424",
+    doi = "10.18653/v1/2023.emnlp-main.424",
+    pages = "6863--6883",
+    file = {ipa.pdf},
+    abstract = {While extreme-scale language models have demonstrated exceptional performance on a variety of language tasks, the degree of control over these language models through pure prompting can often be limited. Directly fine-tuning such language models can be effective for tailoring them, but it can be either extremely costly (e.g., GPT-3) or not even feasible for the broader community (e.g., GPT-4). We propose Inference-time Policy Adapters (IPA), which efficiently tailors a language model such as GPT-3 without fine-tuning it. IPA guides a large base model during decoding time through a lightweight policy adapter trained to optimize an arbitrary user objective with reinforcement learning. On five challenging text generation tasks, such as toxicity reduction and lexically constrained generation, IPA consistently brings significant improvements over off-the-shelf language models. It outperforms competitive baseline methods, sometimes even including expensive fine-tuning. In particular, tailoring GPT-2 with IPA can outperform GPT-3, while tailoring GPT-3 with IPA brings a major performance boost over GPT-3 (and sometimes even over GPT-4). Our promising results highlight the potential of IPA as a lightweight alternative to tailoring extreme-scale language models.},
+}
+
+@inproceedings{influence_theory,
+      title={Statistical and Computational Guarantees for Influence Diagnostics}, 
+      author={Jillian Fisher and Lang Liu and Krishna Pillutla and Yejin Choi and Zaid Harchaoui},
+      year={2023},
+      month = apr,
+      year = "2023",
+      address = "Valencia",
+      publisher = "Artificial Intelligence and Statistics (AISTATS)",
+      doi = "10.48550/arXiv.2212.04014",
+     Note = "https://proceedings.mlr.press/v206/fisher23a/fisher23a.pdf",
+      primaryClass={stat.ML},
+      file = {influence_theory.pdf},
+      abstract = {Influence diagnostics such as influence functions and approximate maximum influence perturba- tions are popular in machine learning and in AI domain applications. Influence diagnostics are powerful statistical tools to identify influential datapoints or subsets of datapoints. We establish finite-sample statistical bounds, as well as com- putational complexity bounds, for influence func- tions and approximate maximum influence per- turbations using efficient inverse-Hessian-vector product implementations. We illustrate our results with generalized linear models and large attention based models on synthetic and real data.},
+}
+
+# Preprints
+@unpublished{author_obf,
+    Author = {Jillian Fisher and Ximing Lu and Jaehun Jung and Liwei Jiang and Yejin Choi},
+    Title = {JAMDEC: Unsupervised Authorship Obfuscation using Contrained Decoding over Small Language Models},
+    abstract = {The permanence of online content combined with the enhanced authorship identification techniques calls for stronger computational methods to protect the identity and  privacy of online authorship when needed, e.g., blind reviews for scientific papers, anonymous online reviews, or anonymous interactions in the mental health forums. In this paper, we propose an unsupervised inference-time approach to authorship obfuscation to address the unique challenges of authorship obfuscation: lack of supervision data for diverse authorship and domains, and the need for a sufficient level of revision beyond simple paraphrasing to obfuscate the authorship, all the while preserving the original content and fluency. We introduce MASQUERADE Decoding, a  user-controlled, inference-time algorithm for authorship obfuscation that can be in principle applied to any text and authorship. Our approach builds on small language models such as GPT2-XL in order to help avoid disclosing the original content to proprietary LLM's APIs, while also reducing the performance gap between small and large language models via algorithmic enhancement. The key idea behind our approach is to boost the creative power of smaller language models through constrained decoding, while also allowing for user-specified controls and flexibility. Experimental results demonstrate that our approach based on GPT2-XL outperforms previous state-of-the-art methods based on comparably small models, while performing competitively against GPT3 175B, a propriety model that is two orders of magnitudes larger. },
+    note = {https://arxiv.org/abs/2402.08761},
+    file = {JAMDEC.pdf},
+    year = {2023}
+}
+@unpublished{pluralism_roadmap,
+    title={A Roadmap to Pluralistic Alignment}, 
+    author={Taylor Sorensen and Jared Moore and Jillian Fisher and Mitchell Gordon and Niloofar Mireshghallah and Christopher Michael Rytting and Andre Ye and Liwei Jiang and Ximing Lu and Nouha Dziri and Tim Althoff and Yejin Choi},
+    year={2024},
+    Note = {https://arxiv.org/abs/2402.05070},
+    file = {roadmap_to_pluralistic_alignment.pdf},
+    abstract = {With increased power and prevalence of AI systems, it is ever more critical that AI systems are designed to serve all, i.e., people with diverse values and perspectives. However, aligning models to serve pluralistic human values remains an open research question. In this piece, we propose a roadmap to pluralistic alignment, specifically using language models as a test bed. We identify and formalize three possible ways to define and operationalize pluralism in AI systems: 1) Overton pluralistic models that present a spectrum of reasonable responses; 2) Steerably pluralistic models that can steer to reflect certain perspectives; and 3) Distributionally pluralistic models that are well-calibrated to a given population in distribution. We also propose and formalize three possible classes of pluralistic benchmarks: 1) Multi-objective benchmarks, 2) Trade-off steerable benchmarks, which incentivize models to steer to arbitrary trade-offs, and 3) Jury-pluralistic benchmarks which explicitly model diverse human ratings. We use this framework to argue that current alignment techniques may be fundamentally limited for pluralistic AI; indeed, we highlight empirical evidence, both from our own experiments and from other work, that standard alignment procedures might reduce distributional pluralism in models, motivating the need for further research on pluralistic alignment.},
+}
+@unpublished{impossible_distillation,
+    title={Impossible Distillation: from Low-Quality Model to High-Quality Dataset & Model for Summarization and Paraphrasing}, 
+    author={Jaehun Jung and Peter West and Liwei Jiang and Faeze Brahman and Ximing Lu and Jillian Fisher and Taylor Sorensen and Yejin Choi},
+    year={2023},
+    Note = {https://arxiv.org/abs/2305.16635},
+    file = {impossible_distill.pdf},
+    abstract = {It is commonly perceived that the strongest language models (LMs) rely on a combination of massive scale, instruction data, and human feedback to perform specialized tasks -- e.g. summarization and paraphrasing, without supervision. In this paper, we propose that language models can learn to summarize and paraphrase sentences, with none of these 3 factors. We present Impossible Distillation, a framework that distills a task-specific dataset directly from an off-the-shelf LM, even when it is impossible for the LM itself to reliably solve the task. By training a student model on the generated dataset and amplifying its capability through self-distillation, our method yields a high-quality model and dataset from a low-quality teacher model, without the need for scale or supervision. Using Impossible Distillation, we are able to distill an order of magnitude smaller model (with only 770M parameters) that outperforms 175B parameter GPT-3, in both quality and controllability, as confirmed by automatic and human evaluations. Furthermore, as a useful byproduct of our approach, we obtain DIMSUM+, a high-quality dataset with 3.4M sentence summaries and paraphrases. Our analyses show that this dataset, as a purely LM-generated corpus, is more diverse and more effective for generalization to unseen domains than all human-authored datasets -- including Gigaword with 4M samples.},
+}
+
+@inproceedings{generative_paradox,
+    Author = {Peter West and Ximing Lu and Nouha Dziri and Faeze Brahman and Linjie Li and Jena D. Hwang and Liwei Jiang and Jillian Fisher and Abhilasha Ravichander and Khyathi Chandu and Benjamin Newman and Pang Wei Koh and Allyson Ettinger and Yejin Choi},
+    Title = {The Generative AI Paradox: "What It Can Create, It May Not Understand"}, 
+    year = {2023},
+    Note = {https://arxiv.org/abs/2311.000595},
+    file = {generation_paradox.pdf},
+    abstract = {The recent wave of generative AI has sparked unprecedented global attention, with both excitement and concern over potentially superhuman levels of artifi- cial intelligence: models now take only seconds to produce outputs that would challenge or exceed the capabilities even of expert humans. At the same time, models still show basic errors in understanding that would not be expected even in non-expert humans. This presents us with an apparent paradox: how do we rec- oncile seemingly superhuman capabilities with the persistence of errors that few humans would make? In this work, we posit that this tension reflects a divergence in the configuration of intelligence in today’s generative models relative to intel- ligence in humans. Specifically, we propose and test the Generative AI Paradox hypothesis: generative models, having been trained directly to reproduce expert- like outputs, acquire generative capabilities that are not contingent upon—and can therefore exceed—their ability to understand those same types of outputs. This contrasts with humans, for whom basic understanding almost always precedes the ability to generate expert-level outputs. We test this hypothesis through controlled experiments analyzing generation vs. understanding in generative models, across both language and image modalities. Our results show that although models can outperform humans in generation, they consistently fall short of human capabili- ties in measures of understanding, showing weaker correlation between generation and understanding performance, and more brittleness to adversarial inputs. Our findings support the hypothesis that models’ generative capability may not be con- tingent upon understanding capability, and call for caution in interpreting artificial intelligence by analogy to human intelligence.},
+    month = dec,
+    year = "2024",
+    address = "Vienna",
+    publisher = "International Conference on Learning Representations (ICLR)",
+    }
+
+# Journal Published
+@article{smoking_cessation,
+  author          = {Scarlett O.Baird and Mike Rinck and  David Rosenfield and  Michelle L. Davis and  Jillian Fisher and  Eni S. Becker and  Mark B. Powers and  Jasper A. J. Smits},
+  journal         = {Cognitive Therapy and Research},
+  number          = {41},
+  title           = {Reducing approach bias to achieve smoking cessation: A pilot randomized placebo-controlled trial.},
+  volume          = {4},
+  year            = {2017},
+  file          = {smoking_cessation.pdf},
+  abstract = {This study aimed to provide a preliminary test of the efficacy of a brief cognitive bias modification program for reducing approach bias in adult smokers motivated to quit. Participants were 52 smokers who were randomly assigned to four sessions of approach bias modification training (AAT) or sham training. Participants were asked to make a self-guided quit attempt upon completion of the final training session. Approach bias was assessed at baseline and at the end of each session, and days abstinent was assessed 1-week following the quit attempt. Individuals assigned to the AAT training condition evidenced significantly greater reductions in approach bias relative to those in the sham condition (p < .001). Baseline approach bias did not moderate the between-group effect (ps > 0.41); however, higher levels of approach bias at baseline were associated with greater approach bias reduction over time irrespective of condition (p < .001). Consistent with hypothesis, the reduction in approach bias during the intervention period was significantly related to the number of days abstinent following the quit attempt (p = .033). The present study extends recent work in alcohol use disorders by showing that approach bias reduction, in this case for smoking-related stimuli, may also facilitate smoking cessation. Clinical and research implications are discussed.}
+}
+
+# Talks
+@incollection{ai_transfer_lab,
+  author         = {Jillian Fisher},
+  title      = {Influence Diagnostics Under Self-Concordance and Application to Natural Language Models},
+  publisher      = {AI Transfer Lab},
+  url            = {https://transferlab.ai/seminar/2023/influence-diagnostics-under-self-concordance/},
+  year           = {2023},
+  month           = {September},
+  keywords       = {invited},
+  file          = {influence_theory_nlp.pdf},
+}
+
+@incollection{JSM_2022,
+  author         = {Jillian Fisher},
+  title      = {Model Editing in Language Models Using Influence Functions},
+  publisher      = {Joint Statistical Meetings},
+  year           = {2022},
+  month          = {August},
+  address       = {Washington, DC},
+  file          = {JSM_2022.pdf},
+}
+
+@incollection{ICSDS_2022,
+  author         = {Jillian Fisher},
+  title      = {Influence Diagnostics Under Self-Concordance},
+  publisher      = {International Conference on Statistical and Data Sciences},
+  year           = {2022},
+  month          = {December},
+  address       = {Florence, Italy},
+}
+
+@incollection{JSM_2023,
+  author         = {Jillian Fisher},
+  title      = {Statistical and Computational Guarantees for Influence Diagnostics},
+  publisher      = {Joint Statistical Meetings},
+  year           = {2023},
+  month          = {August },
+  address       = {Toronto, Canada},
+}
